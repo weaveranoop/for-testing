@@ -46,11 +46,12 @@ Request from the Browser for a specific page will go through following steps:
 Things to note: 
 
 + After performing certain actions, the Browser should load another page, possibly with the status of the previous action. For example, if the action is 'delete course', the Browser should load the 'courses' page after the server performed the action. In such cases, the result generated for the action will be of type RedirectResult which simply instructs the Browser to send a fresh request for the specified page. In such cases, we do not create a PageData object for the original request.
-Example:
- - Browser request for 'delete course' action.
- - Server performs the action (creates a RedirectResult object but no PageData object) and instructs the Browser to load the 'courses' page.
- - As instructed, the Browser requests for the 'courses' page.
- - Server processes the request separately (creates a ShowPageResult object but no PageData object) and returns the 'courses' page.
+
+ Example:
+  - Browser request for 'delete course' action.
+  - Server performs the action (creates a RedirectResult object but no PageData object) and instructs the Browser to load the 'courses' page.
+  - As instructed, the Browser requests for the 'courses' page.
+  - Server processes the request separately (creates a ShowPageResult object but no PageData object) and returns the 'courses' page.
 + The result of some actions is downloading of a file (e.g. an evaluation report). In such cases, the result type will be FileDownloadResult and no PageData object will be generated.
 + Since the high-level workflow of processing a request is same for any request, we use the , the Template Method pattern to abstract the process folow into the Action class.
 + The list of actions and corresponding URIs are listed in the ActionURIs nested class of the Const class.
@@ -91,7 +92,7 @@ Represented by these classes:
 ##Policies
 
 General: 
-Null values should **not** be used as parameters to this API, except when following the KeepExisting policy (explained later).
++ Null values should **not** be used as parameters to this API, except when following the KeepExisting policy (explained later).
 
 Access control:
 + Although this component provides methods to perform access control, it API itself is not access controlled. The UI is expected to check access control (using GateKeeper class) before calling a method in the Logic.
@@ -183,8 +184,10 @@ common.datatransfer package contains lightweight 'data transfer object' classes 
 
 ![Data Transfer Classes](https://raw.githubusercontent.com/TEAMMATES/repo/master/src/main/webapp/dev/images/dataTransferClasses.png)
 
-(a) Test Driver can use the DataBundle in this manner to send an arbitrary number of objects to be persisted in the database. 
+(a) Test Driver can use the DataBundle in this manner to send an arbitrary number of objects to be persisted in the database.
+
 (b) This structure can be used to transfer data of a course (e.g., when constructing the home page for an instructor). 
+
 (c) This structure can be used to send results of an evaluation (e.g., when showing an evaluation report to an instructor) 
 
 For convenience, these classes use public variables for data. This is not a good practice as it contravenes OO principle of _information hiding_ and increases the risk of inconsistent data. This strategy is to be reconsidered at a later date. 
