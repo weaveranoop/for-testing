@@ -3,19 +3,23 @@
 + **Course**: we use 'course' to mean 'module', 'class'. A course here means an offering of a course in a particular semester/term. If the course is offered twice in two semesters, they are considered two courses.
 + **Contribution scale**:
 
-    [equal share]+100%
-    [equal share]+90%
-    
-    ...
-    
-    [equal share]
-    [NOT SURE]
-    [equal share]-10%
-    
-    ...
-    
-    [equal share]-90%
-    [0%]  (did nothing at all)
+        [equal share]+100%
+        
+        [equal share]+90%
+        
+        ...
+        
+        [equal share]
+        
+        [NOT SURE]
+        
+        [equal share]-10%
+        
+        ...
+        
+        [equal share]-90%
+        
+        [0%]  (did nothing at all)
 + **DevMan**: Developer manual (this document).
 + **DevSite**: [Our developer web site](https://github.com/TEAMMATES/repo).
 + **Dev green**: All tests are passing on the dev server.
