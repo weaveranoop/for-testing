@@ -15,7 +15,7 @@
 + **DevSite**: [Our developer web site](https://github.com/TEAMMATES/repo).
 + **Dev green**: All tests are passing on the dev server.
 + **Dev server**: The Development server running on your Computer.
-Enrollment, Enroll (NOT enrolment, enrol).
++ **Enrollment, Enroll** (NOT enrolment, enrol).
 + **Live green**: All tests are passing against the app running on the live server.
 + **Live server**: The server running the released public version of the app (i.e. http://teammatesv4.appspot.com).
 + **Productions server**: A server on AppSpot. Can be the live server or a staging server.
