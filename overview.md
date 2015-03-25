@@ -1,14 +1,14 @@
 #Project
----
+
 ##Vision
----
+
 Long term goal: Become the **biggest student project in the world**. 
 {Biggest = many contributors, many users, relatively large code base (50k-100k LoC), evolving over a long period.}  
 'Biggest' above also implies an exceptionally high quality standard because high quality is a necessity for the long-term survival of a big student project. 
 
 This project will also serve as **a model and a training ground for Software Engineering students** who want to learn SE skills in the context of a non-trivial real software product. 
 ##Challenges
----
+
 The project differs from typical student projects in the following areas, which makes it more challenging and the experience more enriching. 
 + **Developers**: All developers are novices and their involvement with the project is short term and part time.
 + **Code**: Working with legacy code written by past developers is harder than writing from scratch.
@@ -21,7 +21,7 @@ The project differs from typical student projects in the following areas, which 
 + **Software Engineering**: As TEAMMATES serve as a model system for training students, it should also focus on applying good SE techniques.
 
 ##Principles
----
+
 We apply these principles to meet the challenges stated above. 
 + **We keep moving forward, always**: We release frequently, in weekly [time-boxed iterations](http://en.wikipedia.org/wiki/Timeboxing). Every week, our product becomes better than the previous week. This means 'go back and rewrite from scratch' is only a last resort.
 + **We are agile**: We are able to change the system quickly and easily to match emerging requirements. We aim for minimal yet sufficient documentation.
