@@ -19,7 +19,7 @@
         
         [equal share]-90%
         
-        [0%]  (did nothing at all)
+        [0%] (did nothing at all)
 + **DevMan**: Developer manual (this document).
 + **DevSite**: [Our developer web site](https://github.com/TEAMMATES/repo).
 + **Dev green**: All tests are passing on the dev server.
