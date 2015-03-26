@@ -120,9 +120,8 @@ API for updating entities:
 API for deleting entities:
 + `Null` parameters: Not expected. Results in assertion failure.
 + FailDeleteSilentlyPolicy: In general, delete operation do not throw exceptions if the target entity does not exist. Instead, it logs a warning. This is because if it does not exist, it is as good as deleted.
-+ Cascade policy: When a parent entity is deleted, entities that have referential integrity with the deleted entity should also be deleted.
-
-     Refer to the API for the cascade logic.
++ Cascade policy:   When a parent entity is deleted, entities that have referential integrity with the deleted entity should also be deleted.  
+  Refer to the API for the cascade logic.
 
 ##Storage
 
@@ -201,9 +200,7 @@ This component automates the testing of TEAMMATES.
 Package overview:
 + **`test.driver`**: Contains infrastructure need for running the test driver.
 + **`test.pageobjects`**: Contains abstractions of the pages as the appear on a Browser (i.e. SUTs).
-+ **`test.cases`**: Contains test cases. 
-
-    Sub packages:
++ **`test.cases`**:   Contains test cases.   Sub packages:  
  - **`.cases.driver`**: Component test cases for testing test driver infrastructure.
  - **`.cases.browsertests`**: System test cases for testing the UI.
  - **`.cases.common`**: Component test cases for testing the `Common` component.
