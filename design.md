@@ -212,15 +212,17 @@ Sub packages:
 Notes:
 + Component tests: Some of these are pure unit tests (i.e., test one component in isolation) while others are integration tests that tests units as well as integration of units with each other.
 + `AllJsTests.java` (implemented as a UI test) is for unit testing JavaScript code.
+
 This is how TEAMMATES testing maps to standard types of testing. 
 
- `Normal: |---------acceptance tests----|---system tests----|-----integration tests-----|-------unit tests----------|`
- `TEAMMATES: |---------manual testing-------------| ----automated UI tests----|---automated component tests ---|`
+Normal: `|---------acceptance tests----|---system tests----|-----integration tests-----|-------unit tests----------|`
+TEAMMATES: `|---------manual testing-------------| ----automated UI tests----|---automated component tests ---|`
 
 ##Client
 
 The Client component contains scripts that can connect to the application backend for things such as migrating data and calculating statistics.
-Package overiew:
 
-+ `**client.remoteapi**`: Classes needed to connect to the backend directly.
-+ `**client.scripts**`: Scripts that do things with the back end data.
+Package overview:
+
++ **`client.remoteapi`**: Classes needed to connect to the backend directly.
++ **`client.scripts`**: Scripts that do things with the back end data.
