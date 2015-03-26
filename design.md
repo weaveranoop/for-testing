@@ -113,15 +113,16 @@ API for retrieving entities:
 API for updating entities:
 + Primary keys cannot be edited except: `Student.email`.
 + KeepExistingPolicy: the new value of an optional attribute is specified as null or set to “Uninitialized”, the existing value will prevail. {This is not a good policy. To be reconsidered}.
-+ Null parameters: Throws an assertion error if that parameter cannot be null. Optional attributes follow KeepExistingPolicy.
++ `Null` parameters: Throws an assertion error if that parameter cannot be null. Optional attributes follow KeepExistingPolicy.
 + Entity not found: Throws `EntityDoesNotExistException` exception.
 + Invalid parameters: Throws `InvalidParametersException`.
 
 API for deleting entities:
 + `Null` parameters: Not expected. Results in assertion failure.
 + FailDeleteSilentlyPolicy: In general, delete operation do not throw exceptions if the target entity does not exist. Instead, it logs a warning. This is because if it does not exist, it is as good as deleted.
-+ Cascade policy: When a parent entity is deleted, entities that have referential integrity with the deleted entity should also be deleted. 
-Refer to the API for the cascade logic.
++ Cascade policy: When a parent entity is deleted, entities that have referential integrity with the deleted entity should also be deleted.
+
+   Refer to the API for the cascade logic.
 
 ##Storage
 
@@ -135,6 +136,7 @@ Package overiew:
 + **`storage.datastore`**: Classes for dealing with the datastore.
 
 Storage contains minimal logic beyond what is directly relevant to CRUD operations. 
+
 In particular, it handles these:
 + Validating data inside entities before creating/updating them, to ensure they are in a valid state.
 + Hiding the complexities of datastore from the `Logic` component. All GQL queries are to be contained inside the `Storage` component.
