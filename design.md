@@ -185,9 +185,7 @@ Package overview:
 
 ![Data Transfer Classes](https://raw.githubusercontent.com/TEAMMATES/repo/master/src/main/webapp/dev/images/dataTransferClasses.png)
 
-1. `Test Driver` can use the `DataBundle` in this manner to send an arbitrary number of objects to be persisted in the database.
-2. This structure can be used to transfer data of a course (e.g., when constructing the home page for an instructor).
-3. This structure can be used to send results of an evaluation (e.g., when showing an evaluation report to an instructor) 
+  (a) `Test Driver` can use the `DataBundle` in this manner to send an arbitrary number of objects to be persisted in the database.    (b) This structure can be used to transfer data of a course (e.g., when constructing the home page for an instructor).    (C) This structure can be used to send results of an evaluation (e.g., when showing an evaluation report to an instructor) 
 
 For convenience, these classes use public variables for data. This is not a good practice as it contravenes OO principle of _information hiding_ and increases the risk of inconsistent data. This strategy is to be reconsidered at a later date. 
 
@@ -200,7 +198,8 @@ This component automates the testing of TEAMMATES.
 Package overview:
 + **`test.driver`**: Contains infrastructure need for running the test driver.
 + **`test.pageobjects`**: Contains abstractions of the pages as the appear on a Browser (i.e. SUTs).
-+ **`test.cases`**:   Contains test cases.   Sub packages:  
++ **`test.cases`**:   Contains test cases.  
+  Sub packages:  
  - **`.cases.driver`**: Component test cases for testing test driver infrastructure.
  - **`.cases.browsertests`**: System test cases for testing the UI.
  - **`.cases.common`**: Component test cases for testing the `Common` component.
