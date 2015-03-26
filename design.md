@@ -45,9 +45,8 @@ Request from the Browser for a specific page will go through following steps:
 
 Things to note: 
 
-+ After performing certain actions, the Browser should load another page, possibly with the status of the previous action. For example, if the action is 'delete course', the Browser should load the 'courses' page after the server performed the action. In such cases, the result generated for the action will be of type `RedirectResult` which simply instructs the Browser to send a fresh request for the specified page. In such cases, we do not create a `PageData` object for the original request.
-
- Example:
++   After performing certain actions, the Browser should load another page, possibly with the status of the previous action. For example, if the action is 'delete course', the Browser should load the 'courses' page after the server performed the action. In such cases, the result generated for the action will be of type `RedirectResult` which simply instructs the Browser to send a fresh request for the specified page. In such cases, we do not create a `PageData` object for the original request.  
+  Example:
   - Browser request for 'delete course' action.
   - Server performs the action (creates a `RedirectResult` object but no `PageData` object) and instructs the Browser to load the 'courses' page.
   - As instructed, the Browser requests for the 'courses' page.
