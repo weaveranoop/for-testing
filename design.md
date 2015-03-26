@@ -216,6 +216,7 @@ Notes:
 This is how TEAMMATES testing maps to standard types of testing. 
 
 Normal: `|---------acceptance tests----|---system tests----|-----integration tests-----|-------unit tests----------|`
+
 TEAMMATES: `|---------manual testing-------------| ----automated UI tests----|---automated component tests ---|`
 
 ##Client
