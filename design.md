@@ -204,7 +204,8 @@ Package overiew:
 + **`test.driver`**: Contains infrastructure need for running the test driver.
 + **`test.pageobjects`**: Contains abstractions of the pages as the appear on a Browser (i.e. SUTs).
 + **`test.cases`**: Contains test cases. 
-Sub packages:
+
+    Sub packages:
  - **`.cases.driver`**: Component test cases for testing test driver infrastructure.
  - **`.cases.browsertests`**: System test cases for testing the UI.
  - **`.cases.common`**: Component test cases for testing the `Common` component.
