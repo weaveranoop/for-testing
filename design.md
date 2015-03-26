@@ -121,8 +121,7 @@ API for deleting entities:
 + `Null` parameters: Not expected. Results in assertion failure.
 + FailDeleteSilentlyPolicy: In general, delete operation do not throw exceptions if the target entity does not exist. Instead, it logs a warning. This is because if it does not exist, it is as good as deleted.
 + Cascade policy: When a parent entity is deleted, entities that have referential integrity with the deleted entity should also be deleted.
-
-   Refer to the API for the cascade logic.
+  Refer to the API for the cascade logic.
 
 ##Storage
 
