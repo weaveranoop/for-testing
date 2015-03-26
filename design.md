@@ -77,10 +77,10 @@ It is accessible via a thin [facade class](http://en.wikipedia.org/wiki/Facade_p
 ![Logic Component](https://raw.githubusercontent.com/TEAMMATES/repo/master/src/main/webapp/dev/images/LogicComponent.png)
 
 Package overiew:
-+ `**logic.api**`: Provides the normal API of the component.
-+ `**logic.backdoor**`: Provides a mechanism for the test driver to access data.
-+ `**logic.core**`: Contains the core logic of the system.
-+ `**logic.automated**`: Contains the logic of automated tasks.
++ **`logic.api`**: Provides the normal API of the component.
++ **`logic.backdoor`**: Provides a mechanism for the test driver to access data.
++ **`logic.core`**: Contains the core logic of the system.
++ **`logic.automated`**: Contains the logic of automated tasks.
 
 ###Logic API
 
@@ -176,9 +176,9 @@ The Common component contains common utilities used across TEAMMATES.
 ![Common Component](https://raw.githubusercontent.com/TEAMMATES/repo/master/src/main/webapp/dev/images/CommonComponent.png)
 
 Package overiew:
-+ `**common.util**`: Contains utility classes.
-+ `**common.exceptions**`: Contains custom exceptions.
-+ `**common.datatransfer**`: Containts data transfer objects. Given below are some more information about this package.
++ **`common.util`**: Contains utility classes.
++ **`common.exceptions`**: Contains custom exceptions.
++ **`common.datatransfer`**: Containts data transfer objects. Given below are some more information about this package.
 
 `common.datatransfer` package contains lightweight 'data transfer object' classes for transferring data among components. They can be combined in various ways to transfer structured data between components. Given below are three examples. 
 
@@ -199,23 +199,23 @@ This component automates the testing of TEAMMATES.
 ![Test Driver Component](https://raw.githubusercontent.com/TEAMMATES/repo/master/src/main/webapp/dev/images/TestDriverComponent.png)
 
 Package overiew:
-+ `**test.driver**`: Contains infrastructure need for running the test driver.
-+ `**test.pageobjects**`: Contains abstractions of the pages as the appear on a Browser (i.e. SUTs).
-+ `**test.cases**`: Contains test cases. 
++ **`test.driver`**: Contains infrastructure need for running the test driver.
++ **`test.pageobjects`**: Contains abstractions of the pages as the appear on a Browser (i.e. SUTs).
++ **`test.cases`**: Contains test cases. 
 Sub packages:
- - `**.cases.driver**`: Component test cases for testing test driver infrastructure.
- - `**.cases.browsertests**`: System test cases for testing the UI.
- - `**.cases.common**`: Component test cases for testing the `Common` component.
- - `**.cases.logic**`: Component test cases for testing the `Logic` component.
- - `**.cases.storage**`: Component test cases for testing the `Storage` component.
+ - **`.cases.driver`**: Component test cases for testing test driver infrastructure.
+ - **`.cases.browsertests`**: System test cases for testing the UI.
+ - **`.cases.common`**: Component test cases for testing the `Common` component.
+ - **`.cases.logic`**: Component test cases for testing the `Logic` component.
+ - **`.cases.storage`**: Component test cases for testing the `Storage` component.
 
 Notes:
 + Component tests: Some of these are pure unit tests (i.e., test one component in isolation) while others are integration tests that tests units as well as integration of units with each other.
 + `AllJsTests.java` (implemented as a UI test) is for unit testing JavaScript code.
 This is how TEAMMATES testing maps to standard types of testing. 
 
- > Normal: |---------acceptance tests----|---system tests----|-----integration tests-----|-------unit tests----------| 
- > TEAMMATES: |---------manual testing-------------| ----automated UI tests----|---automated component tests ---|
+ `Normal: |---------acceptance tests----|---system tests----|-----integration tests-----|-------unit tests----------|`
+ `TEAMMATES: |---------manual testing-------------| ----automated UI tests----|---automated component tests ---|`
 
 ##Client
 
