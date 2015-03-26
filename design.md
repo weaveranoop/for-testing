@@ -62,13 +62,13 @@ Things to note:
 The UI consist of following pages:
 + Product pages (functional): e.g., 'courses' page. These require login.
 + Product pages (peripheral): e.g., help pages, error pages. etc.
-+ Website pages: These are the static pages of the product website. e.g., contact.html
++ Website pages: These are the static pages of the product website. e.g., `contact.html`
 + Project pages: Pages meant for developers, such as this page.
 
 ##Logic
 
 The `Logic` component handles the business logic of TEAMMATES. 
-It is accessible via a thin [facade class](http://en.wikipedia.org/wiki/Facade_pattern) called [Logic](https://code.google.com/p/teammatespes/source/browse/src/main/java/teammates/logic/api/Logic.java) which makes use of several *Logic classes to handle the logic related to various types of data and to access data from the `Storage` component. In particular, Logic is responsible for these: 
+It is accessible via a thin [facade class](http://en.wikipedia.org/wiki/Facade_pattern) called [Logic](https://code.google.com/p/teammatespes/source/browse/src/main/java/teammates/logic/api/Logic.java) which makes use of several *`Logic` classes to handle the logic related to various types of data and to access data from the `Storage` component. In particular, `Logic` is responsible for these: 
 + Managing relationships between entities. e.g., cascade logic for create/update/delete.
 + Managing transactions. e.g., to ensure atomicity of a transaction.
 + Sanitizing input values recevied from the UI component.
@@ -112,7 +112,7 @@ API for retrieving entities:
 
 API for updating entities:
 + Primary keys cannot be edited except: `Student.email`.
-+ KeepExistingPolicy: the new value of an optional attribute is specified as null or set to “Uninitialized”, the existing value will prevail. {This is not a good policy. To be reconsidered}.
++ KeepExistingPolicy: the new value of an optional attribute is specified as `null` or set to “Uninitialized”, the existing value will prevail. {This is not a good policy. To be reconsidered}.
 + `Null` parameters: Throws an assertion error if that parameter cannot be null. Optional attributes follow KeepExistingPolicy.
 + Entity not found: Throws `EntityDoesNotExistException` exception.
 + Invalid parameters: Throws `InvalidParametersException`.
