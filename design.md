@@ -76,7 +76,7 @@ It is accessible via a thin [facade class](http://en.wikipedia.org/wiki/Facade_p
 
 ![Logic Component](https://raw.githubusercontent.com/TEAMMATES/repo/master/src/main/webapp/dev/images/LogicComponent.png)
 
-Package overiew:
+Package overview:
 + **`logic.api`**: Provides the normal API of the component.
 + **`logic.backdoor`**: Provides a mechanism for the test driver to access data.
 + **`logic.core`**: Contains the core logic of the system.
@@ -130,7 +130,7 @@ The Storage component performs CRUD (Create, Read, Update, Delete) operations on
 
 ![Storage Component](https://raw.githubusercontent.com/TEAMMATES/repo/master/src/main/webapp/dev/images/StorageComponent.png)
 
-Package overiew:
+Package overview:
 + **`storage.api`**: Provides the normal API of the component.
 + **`storage.entity`**: Classes that represent persistable entities.
 + **`storage.datastore`**: Classes for dealing with the datastore.
@@ -177,7 +177,7 @@ The Common component contains common utilities used across TEAMMATES.
 
 ![Common Component](https://raw.githubusercontent.com/TEAMMATES/repo/master/src/main/webapp/dev/images/CommonComponent.png)
 
-Package overiew:
+Package overview:
 + **`common.util`**: Contains utility classes.
 + **`common.exceptions`**: Contains custom exceptions.
 + **`common.datatransfer`**: Containts data transfer objects. Given below are some more information about this package.
@@ -200,7 +200,7 @@ This component automates the testing of TEAMMATES.
 
 ![Test Driver Component](https://raw.githubusercontent.com/TEAMMATES/repo/master/src/main/webapp/dev/images/TestDriverComponent.png)
 
-Package overiew:
+Package overview:
 + **`test.driver`**: Contains infrastructure need for running the test driver.
 + **`test.pageobjects`**: Contains abstractions of the pages as the appear on a Browser (i.e. SUTs).
 + **`test.cases`**: Contains test cases. 
