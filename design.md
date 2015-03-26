@@ -185,7 +185,9 @@ Package overview:
 
 ![Data Transfer Classes](https://raw.githubusercontent.com/TEAMMATES/repo/master/src/main/webapp/dev/images/dataTransferClasses.png)
 
-  (a) `Test Driver` can use the `DataBundle` in this manner to send an arbitrary number of objects to be persisted in the database.    (b) This structure can be used to transfer data of a course (e.g., when constructing the home page for an instructor).    (C) This structure can be used to send results of an evaluation (e.g., when showing an evaluation report to an instructor) 
+  (a) `Test Driver` can use the `DataBundle` in this manner to send an arbitrary number of objects to be persisted in the database.  
+  (b) This structure can be used to transfer data of a course (e.g., when constructing the home page for an instructor).  
+  (c) This structure can be used to send results of an evaluation (e.g., when showing an evaluation report to an instructor).   
 
 For convenience, these classes use public variables for data. This is not a good practice as it contravenes OO principle of _information hiding_ and increases the risk of inconsistent data. This strategy is to be reconsidered at a later date. 
 
